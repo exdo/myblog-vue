@@ -1,7 +1,10 @@
 import axios from "axios";
 
 const request = axios.create({
-    baseURL: 'https://blog.idaoteng.xyz/api',
+    //生产环境
+    //baseURL: 'https://blog.idaoteng.xyz/api',
+    //本地开发环境
+    baseURL: 'http://localhost:3000/api',
     timeout: 5000,
 });
 //通用post请求
